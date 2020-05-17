@@ -4,7 +4,7 @@ class BirdCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentBird: this.props.birds[this.props.birdIndex],
+      currentBird: this.props.currentBird,
     };
   }
 

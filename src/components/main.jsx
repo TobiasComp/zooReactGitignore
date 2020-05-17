@@ -22,12 +22,7 @@ class Main extends Component {
       case "wild":
         return <WildPanel />;
       case "bird":
-        return (
-          <BirdPanel
-            activeBirdIndex={this.state.activeBird}
-            birds={this.state.birds}
-          />
-        );
+        return <BirdPanel activeBirdIndex={this.state.activeBirdIndex} />;
     }
   }
 
@@ -59,6 +54,7 @@ class Main extends Component {
         />
         <div>{this.renderPanel()}</div>
       </div>
+      // <Paginator onIndexChange={this.handleIndexChange}/>
     );
   }
 }

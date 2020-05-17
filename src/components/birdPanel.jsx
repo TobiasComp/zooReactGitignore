@@ -59,7 +59,9 @@ class BirdPanel extends Component {
             </ul>
           </div>
           <div>
-            <BirdCard birdIndex={this.props.activeBirdIndex} />
+            <BirdCard
+              currentBird={this.state.birds[this.props.activeBirdIndex]}
+            />
           </div>
         </div>
       </div>
