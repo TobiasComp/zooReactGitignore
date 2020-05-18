@@ -8,6 +8,11 @@ class BirdCard extends Component {
     };
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.currentBird != this.props.currentBird)
+      this.setState({ currentBird: this.props.currentBird });
+  }
+
   render() {
     return (
       <div>
